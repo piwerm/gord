@@ -1,3 +1,24 @@
 # Gord
 
 Games for learn german words. 
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+
+        <title>GORD</title>
+    </head>
+    <body>
+        <div class="container">
+            # Marked in the browser\n\nRendered by **marked**.
+        </div>
+        <script>
+            document.querySelector(".container").innerHTML = marked.parse(document.querySelector(".container").innerHTML);
+        </script>
+    </body>
+</html>
