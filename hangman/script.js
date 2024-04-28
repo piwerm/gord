@@ -78,6 +78,8 @@ function end_game(message) {
 
     document.body.append(message_element);
     document.body.append(message_back_element);
+
+    localStorage.removeItem("word");
 }
 
 function lose_check() {
