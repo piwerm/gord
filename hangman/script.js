@@ -27,8 +27,8 @@ function add_letter(letter) {
         current_letters.push(letter);
         let after = failed_attempts();       
 
-        if (after == before) new Audio("./hangman/sounds/success.mp3").play();
-        else new Audio("./hangman/sounds/fail.mp3").play();
+        if (after == before) new Audio("https://piwerm.github.io/gord/hangman/sounds/success.mp3").play();
+        else new Audio("https://piwerm.github.io/gord/hangman/sounds/fail.mp3").play();
     }
 }
 
@@ -60,7 +60,7 @@ function reload_keyboard() {
 }
 
 function reload_hangman() {
-    document.querySelector(".hangman").setAttribute("src", `./hangman/hangman/${failed_attempts()}.png`);
+    document.querySelector(".hangman").setAttribute("src", `https://piwerm.github.io/gord/hangman/hangman/${failed_attempts()}.png`);
 }
 
 function end_game(message) {
@@ -82,16 +82,16 @@ function end_game(message) {
 
 function lose_check() {
     if (failed_attempts() >= 10) {
-        document.querySelector(".hangman").setAttribute("src", `./hangman/hangman/lose.png`);
-        new Audio("./hangman/sounds/lose.mp3").play();
+        document.querySelector(".hangman").setAttribute("src", `https://piwerm.github.io/gord/hangman/hangman/lose.png`);
+        new Audio("https://piwerm.github.io/gord/hangman/sounds/lose.mp3").play();
         end_game("Lose...");
     }
 }
 
 function win_check() {
     if (success_attempts() >= word.length) {
-        document.querySelector(".hangman").setAttribute("src", `./hangman/hangman/win.png`);
-        new Audio("./hangman/sounds/win.mp3").play();
+        document.querySelector(".hangman").setAttribute("src", `https://piwerm.github.io/gord/hangman/hangman/win.png`);
+        new Audio("https://piwerm.github.io/gord/hangman/sounds/win.mp3").play();
         end_game("Win!");
     }
 }
