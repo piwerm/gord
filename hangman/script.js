@@ -74,7 +74,7 @@ function end_game(message) {
     let message_back_element = document.createElement("a");
     message_back_element.classList.add("message-back");
     message_back_element.innerText = "Züruck";
-    message_back_element.setAttribute("href", "/hangman-form.html");
+    message_back_element.setAttribute("href", "https://piwerm.github.io/gord/hangman-form.html");
 
     document.body.append(message_element);
     document.body.append(message_back_element);
