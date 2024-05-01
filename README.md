@@ -4,4 +4,4 @@ Games for learning german words.
 
 ## Games
 
-- Hangman `v1.2`
+- Hangman `v1.3`

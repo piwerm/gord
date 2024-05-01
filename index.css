@@ -1,0 +1,49 @@
+.gallery {
+    width: 100%;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1%;
+}
+
+.gallery-item {
+    width: 25%;
+    aspect-ratio: 16/9;
+
+    cursor: pointer;
+    border-radius: 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+
+    background-color: #000000;
+
+    overflow: hidden;
+}
+
+.gallery-preview {
+    width: 100%;
+    aspect-ratio: 16/9;
+
+    opacity: 0.6;
+}
+
+.gallery-name {
+    position: absolute;
+
+    font-size: 3em;
+    color: #FFFFFF;
+
+    opacity: 0.5;
+    transition: 0.5s;
+}
+
+.gallery-item:hover .gallery-name {
+    opacity: 1;
+    transform: scale(1.5);
+}

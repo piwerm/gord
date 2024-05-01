@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="de">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="../base.css">
+        <link rel="stylesheet" href="./index.css">
+
+        <title>Gord | Galgen</title>
+    </head>
+    <body>
+        <h1 class="page-header">Galgen</h1>
+
+        <article class="page">
+            <div class="container"></div>
+        </article>
+  
+        <template id="form">
+            <form action="#" class="form">
+                <h2>Wort</h2>
+                <input type="text" name="word-input" class="word-input">
+                <button type="submit" class="begin-button">Beginnen</button>
+                <a class="message-back" href="../">Zürück</a>
+            </form>
+        </template>
+
+        <template id="game">
+            <div class="control">
+                <div class="word"></div>
+                <div class="keyboard"></div>
+            </div>
+            <img src="./images/0.png" alt class="hangman">
+        </template>
+
+        <template id="win">
+            <img src="./images/win.png" alt class="hangman">
+            <div class="message">Win!</div>
+            <a class="message-back" href="./">Zürück</a>
+        </template>
+
+        <template id="lose">
+            <img src="./images/lose.png" alt class="hangman">
+            <div class="message">Lose...</div>
+            <a class="message-back" href="./">Zürück</a>
+        </template>
+        
+        <template id="word-letter">
+            <div class="word-letter"></div>
+        </template>
+
+        <template id="keyboard-letter">
+            <div class="keyboard-letter"></div>
+        </template>
+
+        <script src="./index.js"></script>
+    </body>
+</html>
